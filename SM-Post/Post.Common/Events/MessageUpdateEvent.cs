@@ -1,6 +1,6 @@
-using CQRS.Core.Messages;
+using CQRS.Core.Events;
 
-namespace CQRS.Core.Events;
+namespace Post.Common.Events;
 
 public abstract class MessageUpdateEvent : BaseEvent
 {
