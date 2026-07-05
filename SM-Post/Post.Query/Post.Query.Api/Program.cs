@@ -3,7 +3,7 @@ using Post.Query.Infrastructure.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddQueryInfrastructure(builder.Configuration.GetConnectionString("SqlServer")!);
+builder.Services.AddQueryInfrastructure(builder.Configuration.GetConnectionString("SqlServer")!, builder.Configuration);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
